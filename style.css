@@ -1,0 +1,277 @@
+/* estilizações gerais */
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+  
+* {
+  margin: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+p, span, li, h3 {
+  color: var(--text-color);
+}
+
+/* estilização do corpo */
+
+body {
+  height: 100vh;
+  background: var(--body-bg-color);
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.container {
+  display: flex;
+  gap: 4rem;
+}
+
+.profileImage {
+  height: auto;
+  width: 8rem;
+  border-radius: 5rem;
+  border: 3px solid var(--bg-techs);
+  margin: 1rem;
+}
+
+.card {
+  background: var(--bg-cards);
+  border-radius: 1rem;
+  padding: 2.4rem;
+  box-shadow: 2px 2px 4px rgb(21, 21, 22);
+  margin: 1rem 0;
+}
+
+.titleCard {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* estilização do aside */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+/* estilização do profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.profile span {
+  margin: 0.4rem 0;
+}
+
+.profile p {
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+/* estilização do links */
+
+.links li {
+  display: flex;
+  gap: 1rem;
+  padding: .6rem;
+  align-items: center;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+/* estilização do technologies */
+
+.technologies ul { 
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.technologies li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  list-style-type: none;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color:black;
+  background: var(--bg-techs);
+  
+  border-radius: 1rem;
+  width: 5.4rem;
+  height: 1.6rem;
+  margin: 0.4rem;
+}
+
+/* estilização do experiences e education */
+
+.listCard li {
+  font-weight: 700;
+  font-size: .9rem;
+  margin: 1rem 2rem;
+}
+
+.listCard p:first-child {
+  font-weight: 400;
+  font-size: .7rem;
+}
+
+.listCard p:last-child {
+  font-weight: 500;
+  font-size: .7rem;
+}
+
+/* estilização do main*/
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* estilização do projects*/
+
+.myProjects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myProjects span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.myProjects p  {
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+.projects {
+  display: flex;
+  gap: 0 2rem;
+}
+
+/* estilização dos cards do projects*/
+
+.projectCard {
+  flex: 1;
+}
+
+.projectCard {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.headerCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projectCard p {
+  font-weight: 500;
+  font-size: .9rem;
+  margin: 1.8rem 0;
+}
+
+/* estilização do footer do card */
+
+.footerCard {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.footerCard li {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.footerCard li:nth-child(3) {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.footerCard li:nth-child(3) span { 
+  background: rgb(247, 244, 120);
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  width: .6rem;
+  height: .6rem;
+}
+
+/* estilização do posts */
+
+.recentPosts span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.postInformation {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.postInformation h3{
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.postInformation span{
+  font-weight: 500;
+  font-size: .9rem;
+  margin-bottom: 1.6rem;
+}
+
+.postInformation p{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.postInformation ul{
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.postInformation li{
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+/* estilização do footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
